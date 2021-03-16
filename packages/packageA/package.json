@@ -1,0 +1,14 @@
+{
+    "name": "package-a",
+    "version": "1.0.0",
+    "module": "dist/build.esm.js",
+    "types": "dist/types",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rollup -c",
+        "watch": "rollup -c -w",
+        "preversion": "yarn build"
+    }
+}

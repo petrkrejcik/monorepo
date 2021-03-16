@@ -1,7 +1,8 @@
 {
     "name": "package-b",
     "version": "1.0.0",
-    "module": "dist/build.esm.js",
+    "browser": "dist/build.esm.js",
+    "main": "dist/build.cjs.js",
     "types": "dist/types",
     "files": [
         "dist"

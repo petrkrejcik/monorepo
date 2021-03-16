@@ -6,7 +6,10 @@ export default [
     {
         input: 'src/index.js',
         external: ['react'],
-        output: [{ file: packageJson.module, format: 'es' }],
+        output: [
+            { file: packageJson.browser, format: 'es' },
+            { file: packageJson.module, format: 'cjs' },
+        ],
         plugins: [
             typescript({ useTsconfigDeclarationDir: true, sourceMap: true }),
             babel({ babelHelpers: 'bundled', presets: ['@babel/preset-react'] }),
